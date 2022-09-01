@@ -43,34 +43,39 @@ Sedangkan ratings.csv adalah kumpulan rating-rating yang dikirim oleh 610 penggu
 ## Data Preparation
 Preparasi data dilakukan dengan tahapan sebagai berikut:
 - Menggabungkan seluruh movieId pada data film dan rating dan menyatukannya menjadi 1 tabel bernama "filmrating"
-
+![gabungan](https://user-images.githubusercontent.com/106704301/187963423-67bf9e26-ef0c-4fe1-a5c3-8bc5a5f282fd.png)
 - mengecek keberadaan missing data dan menghapus missing data
-
+![menghapus null](https://user-images.githubusercontent.com/106704301/187963505-3795136f-832f-48ca-93e9-4b915509115a.png)
 - Memisahkan tahun rilis dari judul menjadi 1 kolom tersendiri dan menghapusnya dari kolom judul
-
+![tahunrilis](https://user-images.githubusercontent.com/106704301/187963559-04660400-d27a-4219-af1a-1e3595883c47.png)
 - Mengubah timestamp agar bisa dibaca sistem
-
+![tanggalan](https://user-images.githubusercontent.com/106704301/187963588-39607de7-beae-44d6-89cf-32afdd53e56e.png)
 - Menghapus nilai rating yang tidak bulat
-
+![ratingbaru](https://user-images.githubusercontent.com/106704301/187963622-15d7b0a5-1702-4bff-ba6b-618739c17a57.png)
 - Mengecek adanya film yang hanya dirating oleh <10 pengguna dan menghapusnya agar permodelan bisa lebih efektif dan efisien
-
-- Mengurutkan berdasarkan movieId
-
-- Mengedrop duplikat
-
+![10 pengguna](https://user-images.githubusercontent.com/106704301/187963681-9c315c35-922d-447c-946b-a15266426fd3.png)
+- Mengurutkan berdasarkan movieId dan Mengedrop duplikat
+![sort dan dropduplikat](https://user-images.githubusercontent.com/106704301/187963736-84fef66b-dd88-4b54-8ba1-2552187b90c6.png)
 - Membuat list
-
+![list](https://user-images.githubusercontent.com/106704301/187963767-414b3527-e4c4-48bc-804e-49dc0ca1ad15.png)
 - Membuat dictionary baru
+![dictbaru](https://user-images.githubusercontent.com/106704301/187963786-9957739b-fd5c-415b-a435-c446e3d12dc8.png)
 
 ## Modeling
 Modeling dilakukan dengan menggunakan metode content-based filtering yang dilakukan dengan tahapan-tahapan sebagai berikut:
 - TF-IDF Vectorizer
+![tfidf1](https://user-images.githubusercontent.com/106704301/187963814-c322a892-12fe-4e1b-89f8-569043a538cf.png)
+![tfidf2](https://user-images.githubusercontent.com/106704301/187963903-3c4edefb-82a0-4f44-a74b-5b1018758291.png)
+![tfidf3](https://user-images.githubusercontent.com/106704301/187963933-06f01b3f-1103-4b32-869a-e5dcdcef7b8f.png)
 
 - Cosine Similarity
+![cosine](https://user-images.githubusercontent.com/106704301/187963988-259c7cf6-5037-4172-98a2-36b61e7d7197.png)
 
 - Mendapatkan Rekomendasi
+![rekomendasi](https://user-images.githubusercontent.com/106704301/187964009-7d37985d-44f0-4d06-997b-574381737ce9.png)
 
 Hasilnya adalah sebagai berikut:
+![hasil rekomendasi](https://user-images.githubusercontent.com/106704301/187964026-2b6b9d50-c71c-4e24-ad86-85838051d51c.png)
 
 Bisa dilihat bahwa setelah saya mencari film "Toy Story", saya akan mendapatkan rekomendasi film "Emperor's New Groove, The", "Moana", "Monsters, Inc.", "Antz", dan "Toy Story 2".
 ## Evaluation
