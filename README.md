@@ -1,6 +1,5 @@
 # Proyek-Sistem-Rekomendasi-Machine-Learning-Terapan-Dicoding
-# Proyek-Pertama-Predictive-Analytics-ML-Terapan-Dicoding
-# Laporan Proyek Machine Learning Prediksi Biaya Premi Asuransi - Haris Amaldi
+# Laporan Proyek Machine Learning Rekomendasi Film - Haris Amaldi
 
 ## Domain Proyek
 
@@ -57,6 +56,7 @@ Preparasi data dilakukan dengan tahapan sebagai berikut:
 - Mengurutkan berdasarkan movieId dan Mengedrop duplikat
 ![sort dan dropduplikat](https://user-images.githubusercontent.com/106704301/187963736-84fef66b-dd88-4b54-8ba1-2552187b90c6.png)
 - Membuat list
+
 ![list](https://user-images.githubusercontent.com/106704301/187963767-414b3527-e4c4-48bc-804e-49dc0ca1ad15.png)
 - Membuat dictionary baru
 ![dictbaru](https://user-images.githubusercontent.com/106704301/187963786-9957739b-fd5c-415b-a435-c446e3d12dc8.png)
